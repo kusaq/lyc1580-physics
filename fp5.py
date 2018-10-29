@@ -15,13 +15,11 @@ n = 600.0
 for i in range(1, len(data), +2):
     powers += [float(data[i-1] + data[i])]
 
-for i in range(20):
-    print('-', end='-')
-print()
+print('-'*20)
 
 for i in range(len(powers)):
-    print(i,'| P =', amperages[i]*3.14*((r_big)**2)*n, 'AND M =', powers[i]*r_mini)
+    print(i,'| P =', round((amperages[i]*3.14*((r_big)**2)*n), 3), 'AND M =', round((powers[i]*r_mini), 3))
 
-for i in range(20):
-    print('-', end='-')
+print('-'*20)
+
 print()
